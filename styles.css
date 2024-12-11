@@ -1,4 +1,15 @@
-.container_grid {
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+ /* problem with centering, when button disappears, cursor lands on grid and colours without wanting to */
+
+#drawButton {
+  padding: 30px;
+}
+.container-grid {
   display: flex;
   width: 500px;
   height: 500px;
@@ -14,5 +25,15 @@
 }
 
 .color {
-  background-color: rgb(158, 61, 77); ;
+  background-color: rgb(61, 111, 158); ;
+}
+
+.button-container {
+  padding-left: 30px;
+}
+
+.erase,
+.reset {
+  padding: 15px;
+  margin-bottom: 10px;
 }
