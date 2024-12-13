@@ -24,7 +24,8 @@
 
 .cell{
   border: 1px solid black;
-  flex: 1 1 calc(100% / 5);
+  flex: 1 1 calc(100% / 16);
+  /* THIS FLEX PROPERTY NEEDS TO CHANGE DYNAMICALLY TO MATCH USER INPUT - WILL HAVE TO BE IN CREATEGRID FUNCTION */
   margin: none;
   box-sizing: border-box;
   aspect-ratio: 1;

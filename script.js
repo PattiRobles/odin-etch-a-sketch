@@ -18,9 +18,11 @@ function createGrid (size) {
 
   //create cells
   for (let i = 1; i <= size*size; i++) {
-    const cell = document.createElement('div')
+    const cell = document.createElement('div');
+    // calculate size per input, no input 16x16 default in css
+    const cellSize = 100/size;
     cell.classList.add('cell');
-    console.log(`Div ${i}`);
+    cell.style.flex = `0 0 ${cellSize}%`
     grid.appendChild(cell)
 
     //add color hover effect
