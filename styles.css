@@ -1,5 +1,6 @@
 .centered {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -15,7 +16,6 @@
   height: 500px;
   border:2px solid black;
   flex-wrap: wrap;
-
   padding: 50px;
   box-sizing: border-box;
   background-clip: content-box;
@@ -24,9 +24,10 @@
 
 .cell{
   border: 1px solid black;
-  flex: 0 0 calc(100% / 16);
+  flex: 1 1 calc(100% / 5);
   margin: none;
   box-sizing: border-box;
+  aspect-ratio: 1;
 }
 
 .color {
